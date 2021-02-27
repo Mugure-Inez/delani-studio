@@ -9,25 +9,26 @@
     src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
     </script>  
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
 <body>
 
 <!-- part 1 has a background image plus a logo, text is in white -->
-<p>
+<div class="container-fluid bg-secondary" style="height: 70vh;">
         WELCOME 
         <br>
         TO DELANI STUDIO 
         <br>
         AMAZING PEOPLE ARE MAKING AMAZING DECISIONS IN A FUN ENVIRONMENT
-    </p> 
+</div> 
         <br>   
 
 <!-- part 2 is an about us section, text alignment is center with line breaks -->
-    <p style="
-    text-align: center;
-
-    ">
-        <b>ABOUT US</b>
+    <div class="container about-us" style="height: 30vh;">
+        <h4><b>ABOUT US</b></h4>
         <br>
         When you work with us, you are part of a team of committed collaborators. All aspects of our software development process are integrated, interactive and agile.
         <br>
@@ -36,43 +37,105 @@
         We start each project understanding your business goals, the user's needs and the product requirements.
         <br>
         Then we help translate them into effective and elegant solutions.
-    </p>
-        <br>
+    </div>
 
 <!-- part 3 is a services section, it contains a background image plus some text in white -->
-    <p>
+    <div class="container-fluid bg-secondary" style="height: 50vh; background-image: url(./images/laptop-image-for-services-section.jpg); text-align: center; color: white;">
+        <h4><b>SERVICES</b></h4>
         Before we sign a contract or write a line of code our team will spend the time needed to understand your product vision
         <br>
         The outcome of this scoping mission is proposal or high-level statement of work based on requirements, we can provide a complete offering or just pieces you need.
-    </p>
+    </div>
         <br>
 
 <!-- part 4 is a what we do section, it contains 3 images and some text on them -->
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, neque.
-    </p>
-        <br>
+<div class="container what-we-do">
+    <h4 class="headings">WHAT WE DO</h4>
+    <div class="row">
+      <div class="col-md-4">
+        <div id="design">
+          <h4 class="title">DESIGN</h4>
+          <p>Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing.</p>
+            <p>Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p>
+        </div>
+        <!-- <div id="design-image">
+          <img src="images/services_icons/design_icon.png" alt="design">
+          <p>DESIGN</p>
+        </div> -->
+      </div>
+      <div class="col-md-4">
+        <div id="development">
+          <h4 class="title">DEVELOPMENT</h4>
+          <p>All engineers are fluent in the latest enterprise, mobile and web development technologies.</p>
+             <p>They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p>
+        </div>
+        <!-- <div id="development-image">
+          <img src="images/services_icons/dev_icon.png" alt="development">
+          <P>DEVELOPMENT</P>
+        </div> -->
+      </div>
+      <div class="col-md-4">
+        <div id="product">
+          <h4 class="title">PRODUCT MANAGEMENT</h4>
+          <p>All engineers are fluent in the latest enterprise, mobile and web development technologies.</p>
+          <p>They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p>
+        </div>
+        <!-- <div id="product-image">
+          <img src="images/services_icons/product_icon.png" alt="products">
+          <P>PRODUCT MANAGEMENT</P>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <br>
 
 <!-- part 5 is a portfolio section with clickable images -->
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, neque.
-    </p>
+    <div class="container bg-warning" style="height: 40vh;">
+        <h4><b>PORTFOLIO</b></h4>
+        <!-- add images here -->
+    </div>
         <br>
 
 <!-- part 6 is the contact us section, remember to add name column, email column and a message here paragraph -->
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, neque.
-    </p>
-         <br>
+    <div class="container-fluid" style="background-image: url(./images/tools-image-for-contact-us-section.jpg); height: 50vh;">
+        <div class="container">
+            <h4 class="h4"><b>CONTACT US</b></h4>
+            <form action="">
+                <!-- paste the mailchimp link inside the "" on the form above -->
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Name...">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Email...">
+                    </div>
+                </div>
+                <br>
+                    <div class="row mt-2">
+                        <textarea name="" id="" cols="" rows="4"
+                        class="form-control" placeholder="Your message here..."></textarea>
+                    </div>
+                <br>
+                    <div>
+                        <input type="Submit" value="Submit" class="btn btn-outline-primary">
+                    </div>
+            </form>
+        </div>
+    </div>
+    <br>
 
 <!-- part 7 is the last section with clickable social meia icons plus a small footer below it with the name Delani Studio plus the year -->
     
-   <p>
+   <div class="container bg-warning">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, neque.
-    </p>
         <br>
 
+        Delani Studio
+        <br>
+        2021
+   </div>
 
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
